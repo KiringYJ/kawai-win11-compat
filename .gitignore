@@ -1,0 +1,48 @@
+# Local runtime/orchestration state
+.omx/
+
+# Original games and adjacent third-party files stay local.
+/Kawai2003/
+/Kawai2004/
+/Kawai2005/
+
+# Local compatibility scratch area: downloads, extracted runtimes, tools, temporary probes
+compat/
+inputs/
+
+# Match extension case explicitly, including on case-sensitive systems.
+*.[eE][xX][eE]
+*.[dD][lL][lL]
+*.[oO][cC][xX]
+*.[cC][aA][bB]
+*.[mM][sS][iI]
+*.[mM][sS][pP]
+*.[zZ][iI][pP]
+*.[rR][aA][rR]
+*.7[zZ]
+*.[pP][dD][bB]
+*.[dD][mM][pP]
+*.[iI][sS][oO]
+*.[vV][hH][dD]
+*.[vV][hH][dD][xX]
+
+# Credentials and personal agent state are never shared workspace policy.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/worktrees/
+
+# Local screenshots/evidence captures; move curated ones to docs/ intentionally if needed
+image.png
+
+# Python/cache/editor noise
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

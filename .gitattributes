@@ -1,0 +1,3 @@
+# Published files are source, configuration, and documentation.
+# Downloaded originals and generated packages are excluded by .gitignore.
+* text=auto

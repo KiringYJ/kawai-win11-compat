@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "games": {
+    "Kawai2003": {
+      "executableName": "Kawai2003.exe",
+      "windowTitlePrefix": "Kawai2003 v",
+      "assemblyManifest": null,
+      "dxWndProfile": "packaging/profiles/Kawai2003.dxwnd.ini.template",
+      "requiresDirectX": false,
+      "showInTaskbar": false,
+      "gameArchive": {
+        "id": "kawai2003-v1.00-original",
+        "version": "1.00",
+        "kind": "zip",
+        "upstreamUrl": "https://web.archive.org/web/20060430053638id_/http://myweb.hinet.net/home4/cps-chen/kawai2003/kawai2003.zip",
+        "bytes": 1119696,
+        "sha256": "40a56f3c04d40457048ba5f0d32b7579323903785ede997e0919928a87756e22",
+        "entryNameEncoding": 950,
+        "entries": [
+          { "path": "Kawai2003/Kawai2003.exe", "outputPath": "Kawai2003.exe", "bytes": 1152000, "sha256": "4ba6929c8c7dbe7518c7726b46f13cd7ec540b64a494baf078c70a9c60327137" }
+        ]
+      }
+    },
+    "Kawai2004": {
+      "executableName": "Kawai2004.exe",
+      "windowTitlePrefix": "Kawai2004 v",
+      "assemblyManifest": "packaging/Kawai2004.exe.manifest",
+      "dxWndProfile": "packaging/profiles/Kawai2004.dxwnd.ini.template",
+      "requiresDirectX": true,
+      "showInTaskbar": false,
+      "gameArchive": {
+        "id": "kawai2004-v1.01-original",
+        "version": "1.01",
+        "kind": "zip",
+        "upstreamUrl": "https://web.archive.org/web/20070227095657id_/http://cps-chen.myweb.hinet.net/kawai2004/kawai2004v101.zip",
+        "bytes": 422228,
+        "sha256": "3e722be316006e07fa3da8c39fa7926db41966b1501f756513df2335a93142c8",
+        "entryNameEncoding": 950,
+        "entries": [
+          { "path": "Kawai2004/Kawai2004.exe", "outputPath": "Kawai2004.exe", "bytes": 309760, "sha256": "b0a5f68e0e2f63db07fad33c54dd4ef654ca5c317d4a62d9ef5cfe63494934f9" },
+          { "path": "Kawai2004/fmod.dll", "outputPath": "fmod.dll", "bytes": 127488, "sha256": "9879a9200fe52adfedaf7a6f9b8d726aa6370fde249dcc7a608eedef3388f36c" },
+          { "path": "Kawai2004/請先讀我.txt", "outputPath": "請先讀我.txt", "bytes": 2788, "sha256": "844e12932ab2ac992a565c1ed5a3588d4fb9698213e39903cdce69a5e24037b1" }
+        ]
+      }
+    },
+    "Kawai2005": {
+      "executableName": "KI2005.EXE",
+      "windowTitlePrefix": "KAWAI 連連看 2005 v",
+      "assemblyManifest": "packaging/KI2005.EXE.manifest",
+      "dxWndProfile": "packaging/profiles/Kawai2005.dxwnd.ini.template",
+      "requiresDirectX": true,
+      "showInTaskbar": true,
+      "gameArchive": {
+        "id": "kawai2005-v1.00-original",
+        "version": "1.00",
+        "kind": "zip",
+        "upstreamUrl": "https://web.archive.org/web/20070227095614id_/http://cps-chen.myweb.hinet.net/kawai2005/ki2005v1.zip",
+        "bytes": 493601,
+        "sha256": "79b12f1190a2e13f60e3481502184d39f967c1785252a3eca850e74fb7f728b0",
+        "entryNameEncoding": 950,
+        "entries": [
+          { "path": "kawai2005/KI2005.EXE", "outputPath": "KI2005.EXE", "bytes": 508416, "sha256": "0e12c1b83ef61a7238a228c933637579cc4ecfb5a571c27a2eed2768bc9ff485" }
+        ]
+      }
+    }
+  },
+  "sharedInputs": {
+    "vb5Runtime": {
+      "id": "microsoft-vb5-sp2-runtime",
+      "version": "05.02.8244",
+      "upstreamUrl": "https://download.microsoft.com/download/vb50pro/utility/1/win98/EN-US/Msvbvm50.exe",
+      "outputName": "MSVBVM50.DLL",
+      "sourcePackage": { "bytes": 992864, "sha256": "b5f8ea5b9d8b30822a2be2cdcb89cda99ec0149832659ad81f45360daa6e6965" },
+      "output": { "bytes": 1355776, "sha256": "8611dc1b60ae5c383bba6cb3ffd8a51aeebff23b95844f0ab3d6e5ecd0fadc84" }
+    },
+    "directXRuntime": {
+      "id": "windows-xp-sp3-dx7vb",
+      "version": "5.03.2600.5512",
+      "upstreamUrl": "http://www.download.windowsupdate.com/msdownload/update/software/dflt/2008/04/windowsxp-kb936929-sp3-x86-enu_c81472f7eeea2eca421e116cd4c03e2300ebfde4.exe",
+      "sourcePackageSha256": "62e524a552db9f6fd22d469010ea4d7e28ee06fa615a1c34362129f808916654",
+      "outputName": "dx7vb.dll",
+      "bytes": 619008,
+      "sha256": "617c432e02ba7c5b79d45e3d09aceb21e58a14b8f13d9be75164c3866c6c81c6"
+    },
+    "dxWnd": {
+      "id": "dxwnd",
+      "version": "2.06.14",
+      "upstreamUrl": "https://sourceforge.net/projects/dxwnd/files/Latest%20build/v2_06_14_build.rar/download",
+      "binaryArchiveSha256": "1d439f18819bea903659677ac0a94aab5c08533a585b5473dfb656e225ee4b5c",
+      "correspondingSource": {
+        "upstreamUrl": "https://sourceforge.net/projects/dxwnd/files/Sources/v2_06_14_src.rar/download",
+        "bytes": 14041449,
+        "sha256": "3802ffe8692811401dea69dac65ec72136412d2e0d9ee08f1f2cb019d527cbd7"
+      },
+      "runtimeFiles": [
+        { "path": "dxwnd.exe", "bytes": 1638400, "sha256": "75fa9d7aa54d77ea61b921256a9012748de3543be7ac6e37de05a59bd9039571" },
+        { "path": "dxwnd.dll", "bytes": 1713664, "sha256": "9ecbadfc10e477b57b54095bfafcfcec9bac466edea6aa25012c21b18cfdaf84" },
+        { "path": "dxwplay.dll", "bytes": 180736, "sha256": "e27d9a96160ce5251dd26c33b29260c6904a0fdeecd87d4c83829222052be1cf" },
+        { "path": "Disasm.dll", "bytes": 138752, "sha256": "f413a207787da88281500aaeae07fb98d7d438ecb4d67f8fcdf0aff2f988717f" },
+        { "path": "dxwnd.wav", "bytes": 44, "sha256": "8b8fbafe8679076454429756fa72f11d5f442c87381cc6a4285451d826a9e629" },
+        { "path": "gpl-3.0.txt", "bytes": 35149, "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986" },
+        { "path": "minhook-LICENSE.txt", "bytes": 4365, "sha256": "d5c2224982b0b95a16b098a561335fa93f3eaf4d0aa964b7843edb986df78dc8" }
+      ]
+    }
+  }
+}
